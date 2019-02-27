@@ -1,0 +1,934 @@
+/*=======================================
+         Basic Properties starts
+=========================================*/
+body {
+    overflow-x: hidden;
+}
+
+{
+    margin: 0;
+    padding: 0;
+}
+
+/*======================================
+           Navigation starts
+=========================================*/
+
+
+.navbar {
+    padding: 10px 0px;     
+    border-bottom: none !important;
+    transition: all 0.5s ease-in-out;
+    background-color: #312925 !important;
+    position: fixed;
+
+}
+
+.logo {
+    padding: 5px;
+}
+.navbar ul li a
+{
+    color: white !important;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px; 
+    font-size: 13px;
+    transition: all 0.5s ease-in;
+    background: transparent !important;
+}
+
+.navbar ul li a:hover, .navbar ul li a:focus
+{
+    color: #5FFACE !important;
+    background: none !important;
+}
+
+.icon-bar {
+    color: white !important;
+    background-color: white !important;
+}
+
+.navbar-toggle
+{
+    border: 1px solid dimgrey !important;
+    color: white !important;
+    transition: all 0.5s ease-in;
+}
+
+.icon-bar
+{
+    color: #F97800 !important;
+    background-color: dimgrey !important;
+}
+.navbar-toggle:hover
+{
+    background-color: #F97800 !important;
+}
+
+ 
+.navbar-inverse .navbar-collapse
+{
+  border-color: transparent !important;  
+       
+}
+
+.location {
+    
+    border: 1px solid white;
+    border-radius: 50px;
+}
+
+.secondary {
+    background-color: #F97800 !important;
+    color: #5FFACE; 
+
+}
+
+
+
+/*======================================
+           Home
+=========================================*/
+
+@-webkit-keyframes typing {
+    from { width: 85%; }
+    to { width:100%; }
+}
+
+@-webkit-keyframes blink-caret {
+    from, to { color: #CEFA60; }
+    50% { color: #F97800; }
+}
+
+
+.text {
+    font-size:35px;
+    width:auto;
+    color:#F97800;
+    white-space:normal;
+    overflow:hidden;
+    border-left: .0em solid black;
+    animation: typing 4s steps(4, end), 
+               blink-caret 1s step-end 5;
+}
+
+.text:hover {
+    color: #CEFA60;
+    transition: all 0.5s ease-in;
+}
+
+.slider {
+    width: 100%;
+    height: 1200px;
+    background-image: url(..//img/slider3.jpeg);
+    background-size: auto;
+    background-position: center;
+
+}
+
+.slider-overlay {
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.65);
+    position: relative;
+
+}
+
+.slider-content {
+    position: absolute;
+    top: 40%;
+    width: 100%;
+
+}
+
+.icons {
+    font-size: 35px;
+    margin-left: 1px;
+}
+
+.cta-div {
+    margin-left: 15px;
+}
+
+.btn1 {
+    padding: 13px 20px;
+    background-color: transparent;
+    color: #F97800;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 15px;
+    border: 2px solid #F97800;
+    border-top-left-radius: 15px;
+    transition: all 0.5s ease-in;
+    
+}
+
+.btn1:hover {
+    text-decoration: none;
+    color: dimgrey;
+    background-color: #5FFACE;
+    border-color: #5FFACE;
+}
+
+.btn2 {
+    padding: 13px 20px;
+    background-color: transparent;
+    color: #F97800;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 15px;
+    border: 2px solid #F97800;
+    border-bottom-right-radius: 15px;
+    transition: all 0.5s ease-in;    
+}
+
+.btn2:hover {
+    text-decoration: none;
+    color: dimgrey;
+    background-color: #CEFA60;
+    border-color: #CEFA60;
+}
+
+.social-networks a.fab {
+    border: 1px solid #F97800;
+    padding: 10px;
+    color: #F97800;
+    width: 35px;
+    height: 35px;
+    margin-left: 2px;
+    border-radius: 25px;
+    transition: all 0.2s ease-in;
+}
+
+.social-networks a.fab:hover {
+    text-decoration: none;
+    color: #5FFACE; 
+    border: 1px solid #5FFACE;
+}
+
+
+/*======================================
+           Performance 
+=========================================*/
+.performance-area {
+    padding-top: 50px;
+}
+
+.performance-area p {
+    margin-bottom:-5px;
+}
+
+.performance-title:hover {
+    text-decoration: inherit;
+    color: #F97800;
+    transition: all 0.5s ease 0s;   
+}
+
+.performance-title-text:hover {
+    text-decoration-line: underline;
+    color: saddlebrown;
+    transition: all 0.5s ease 0s;  
+}
+
+.performance-10 {
+    box-shadow: 0 0 10px rgba(0,0,0,0,0,5);
+    overflow: hidden;
+    padding: 25px 35px;
+    position: relative;
+    transition: all 0.5s ease 0s;
+    z-index: 10;
+    margin-top: 20px;
+}
+
+.performance-10::before, .performance-10::after {
+    content: "";
+    height: 300%;
+    position: absolute;
+    transform: rotate3d(45deg);
+    width: 120%;
+    z-index: -10;
+    transition: all 1s;
+    opacity: 0;
+    background-color: #F97800;
+}
+
+.performance-10::before {
+    top: -40px;
+    left: 100%;
+}
+
+.performance-10:hover:before {
+    left: -30px;
+    opacity: 1;
+}
+
+.performance-10::after {
+    right: 100%;
+    bottom: -40px;
+}
+
+.performance-10:hover:after {
+    right: -30px;
+    opacity: 1;
+}
+  
+.performance-10:hover {
+    color: saddlebrown;
+}
+
+.performance-10:h3 {
+    color: white;
+   
+}
+
+.performance-10:hover h3 {
+    color: saddlebrown;
+}
+
+.performance-10:hover h3:after {
+    background-color: white;
+}
+
+.performance-icon i {
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: saddlebrown;
+    transition: all 0.5s;
+}
+
+.performance-10:hover .performance-icon i {
+    transform: rotate(360deg);
+    color: aqua;
+}
+
+.performance-10 h3 {
+    font-size: 30px;
+    font-weight: 700;
+    padding-bottom: 15px;
+    position: relative;
+    
+}
+
+.performance-10 p {
+    font-size: 17px;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+/*======================================
+           Menu 
+=========================================*/
+
+.our-menu {
+    padding-top: 50px;
+}
+
+.our-menu-title:hover {
+    text-decoration: inherit;
+    color: #F97800;
+    transition: all 0.5s ease 0s;   
+}
+
+.row.no-gutters [class*=col-] {
+    padding-right: 0;
+    padding-left: 0;
+
+}
+
+.img-wrapper {
+    overflow: hidden;
+    background-color: #000;
+}
+
+.img-wrapper img {
+    transition: transform 1.3s ease;
+    width: 100%;
+    cursor: zoom-in;
+    opacity: 0.6;
+}
+
+.img-wrapper img:hover {
+    transform: scale(1.5, 1.6);
+    opacity: 1;
+
+}
+
+/*======================================
+           Team 
+=========================================*/
+
+.members {
+    padding-top: 50px;
+}
+
+.members:hover {
+    text-decoration: inherit;
+    color: #F97800;
+    transition: all 0.5s ease 0s;   
+}
+
+.memrebs-title-text:hover {
+    text-decoration: inherit;
+    color: saddlebrown;
+    transition: all 0.5s ease 0s;  
+ 
+}
+
+.team-member {
+    margin: 10px 15px;
+  
+}
+
+.team-member:hover {
+    cursor: grab;
+    opacity: 0.8;
+    transform: scale(1.1);
+    transition: all 0.6s ease 0s;  
+}
+
+.team-member-info {
+    padding: 15px 0 20px 0;
+}
+
+h4.team-member-name {
+    font-size: 19px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    padding-top: 2px;
+    color: brown;
+}
+
+h4.team-member-name:hover {
+    color: #F97800;
+}
+    
+h4.team-member-description {
+    color:#F97800;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+}
+
+.social-list {
+    padding-left: 0;
+}
+
+.social-list li {
+    list-style: none;
+    display: inline-table;
+    width: 30px;
+    height: 30px;
+    margin-right: 6px;
+    margin-top: 10px;
+}
+
+.social-list i {
+    font-size: 19px;
+}
+
+.icon-gray i {
+    color: #F97800;
+} 
+
+.icon-gray i:hover {
+    transform: scale(1.5, 1.7);
+    transition: transform 0.5s ease 0s; 
+    color: aqua;
+}
+
+
+/*======================================
+           Statements 
+=========================================*/
+
+.carousel-inner img {
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    border: 3px solid #F97800;
+    padding: 5px;
+
+}
+
+.statements {
+    
+    background-image: url(..//img/our-statement.JPG);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: saddlebrown;
+    padding-bottom: 140px;  
+}
+    
+.statement-text {
+    color: #000;
+    text-decoration: inherit;
+    padding-top: 10px;
+}
+
+.statement-text:hover {
+    color: #F97800;
+    text-decoration: inherit;
+    transition: all 0.5s ease 0s;  
+}
+
+.statements .carousel-indicators {
+    bottom: -60px;   
+}
+
+.carousel-inner p {
+    font-size: 16px;
+    font-style: italic;
+    margin-top: 30px;
+}
+
+/*======================================
+           About us 
+=========================================*/
+
+.slider-about-us {
+    width: 100%;
+    height: 919px;
+    background-image: url(..//img/about-us.jpg);
+    background-size: cover;
+    background-position: center;
+
+}
+
+.about-us-overlay {
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.25);
+    position: relative;
+}
+
+.slider-about-us-content {
+    position: absolute;
+    top: 16%;
+    width: 100%;
+    color: #F97800;
+}
+
+.slider-about-us-content:hover {
+    position: absolute;
+    top: 16%;
+    width: 100%;
+    transition: all 0.5s ease-in-out;
+    color: darkgoldenrod;
+}
+
+.organicfree img {
+    opacity: 0.2;
+    width: auto;
+    height: auto;
+   
+}
+
+.organicfree img:hover{
+    opacity: 1;
+    width: auto;
+    height: auto;
+    transition: all 0.8s ease-in-out;
+    transform: scale(1.1, 1.1);   
+}
+
+#accordian .panel {
+    border: none;
+    padding: 10px;
+    box-shadow: 7px 3px #A9AB9F;
+    margin-bottom: 5px;
+}
+
+#accordian .panel-heading {
+    padding: 0;
+    border: none;
+    border-radius: none;
+    background: white;
+}
+
+#accordian .panel-title a {
+    display: block;
+    border-radius: 5px;
+    padding: 7px;
+    font-size: 18px;
+    font-weight: normal;
+    color: white;
+    border: none;
+    background: #F97800;
+    position: relative;
+    transition: all 0.4s ease 0s;
+    text-decoration: none;  
+}
+
+#accordian .panel-title a:after, 
+#accordian .panel-title a.collapsed:after {
+    content: "\f068";
+    font-family: fontawesome;
+    width: 40px;
+    height: 40px;
+    line-height: 34px;
+    border-radius: 50%;
+    text-align: center;
+    background: #F97800;
+    font-size: 17px;
+    border: 3px solid white;
+    color: white;
+    position: absolute;
+    left: -11px;
+    top: -2px;
+    transition: all 0.4s ease 0s;   
+}
+
+#accordian .panel-title a.collapsed:after {
+    content: "\f067";
+}
+
+#accordian .panel-title a:hover:after,
+#accordian .panel-title a.collapsed:after {
+    transform: rotate(180deg);
+}
+   
+#accordian .panel-body {
+    background-color: #D7D9CD;
+    font-size: 16px;
+    color: darkgoldenrod;
+    border-radius: 10px;
+}
+
+/*======================================
+           Video 
+========================================*/
+
+.food-video {
+  
+    padding-top: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 20px 15px 0px 0px rgba(233, 231, 230, 0.9);
+    border-radius: 25px;
+}
+
+.video-text {
+    padding-top: 10px;
+    color: #F97800;
+}
+
+.food-video:hover .controls {
+    transform: translate(0);
+}
+
+.video {
+    width: 100%;
+    background: #ccc;     
+}
+
+.controls {
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    flex-wrap: wrap;
+    background: rgba(0, 0, 0, 0.5);
+    transform: translateY(100%) translateY(-5px);
+    transition: all 0.5s ease 0s;
+
+}
+
+.buttons {
+    padding: 10px;
+}
+
+.buttons button {
+    background: none;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    
+}
+
+.buttons button:before {
+    content: '\f144';
+    font-family: 'Font Awesome 5 Free';
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    font-size: 28px;
+    color: #F97800;
+    -webkit-font-smothing: antialiased;
+    
+}
+
+.buttons button.play:before {
+    content: #F97800;
+}
+
+
+.buttons button.pause:before {
+    content: "\f28b";
+}
+
+.orange-bar {
+    height: 10px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #000;
+  
+}
+
+.orange-juice {
+    height: 10px;
+    background-color: orangered;
+}
+
+/*======================================
+           Location
+========================================*/
+
+#map {
+    height: 450px;
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 10px 10px 0px 0px rgba(248, 216, 174, 0.7);
+}
+
+.location {
+    padding-top: 85px;
+    padding-bottom: 20px;
+    color: #F97800;
+}
+
+.location:hover {
+    color: darkgoldenrod;
+    transition: all 0.5s ease 0s;
+}
+
+/*======================================
+           Visitors
+========================================*/
+
+.stat {
+    background-image: url(..//img/cover-bg-1.jpg);
+    background-position: center;
+    padding-top: 180px;
+    padding-bottom: 200px;
+    color: #F97800;
+    background-attachment: fixed;
+    margin-top: 20px;
+}
+
+.stat-text {
+    color: #000;
+    padding-bottom: 0px;
+}
+
+.stat-text:hover {
+    color: #F97800;
+    padding-bottom: 0px;
+    transition: all 0.5s ease 0s;
+}
+
+.stat i {
+    font-size: 90px;
+}
+
+.stat h2 {
+    font-size: 40px;
+    font-weight: bolder;
+    color: aqua;
+}
+
+.stat p {
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-size: 15px;
+}
+
+/*======================================
+           Contact 
+========================================*/
+
+.contact-us {
+    padding-top:50px;
+    color: #F97800 !important;   
+}
+
+.jumbotron {
+    background: #FCE2C4 !important;
+}
+
+.contact-form {
+    box-shadow: 10px 10px 10px 10px rgba(248, 216, 174, 0.4);
+}
+
+.contact-form button.btn {
+    font-size: 15px;
+    font-weight: 800;
+    padding: 20px, 43px;
+    border: 1px solid #F97800;
+    color: #F97800;
+    border-radius: 35px;
+}
+
+.container-fluid {
+    padding-top:30px;
+}
+
+/*======================================
+           Footer 
+========================================*/
+
+footer {
+    background-color: #F97800;
+}
+
+.footer-nav {
+    list-style: none;
+    float: left;
+}
+
+.social-media-links {
+    list-style: none;
+    float: right;
+}
+
+.footer-nav li,
+.social-media-links li {
+    display: inline-block;
+    margin-right: 20px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.footer-nav li:last-child,
+.social-media-links li:last-child {
+    margin-right: 15px;
+}
+
+.footer-nav li a:link,
+.footer-nav li a:visited,
+.social-media-links li a:visited,
+.social-media-links li a:visited {
+    text-decoration: none;
+    border: 0;
+    color: darkred;  
+}
+
+.footer-nav li a:hover {
+    color: aqua;
+    transition: all 0.7s ease 0s;    
+}
+
+.footer-nav li a:link,
+.footer-nav li a:visited {
+    font-size: 14px;
+}
+
+.social-media-links li a:hover {
+    color: aqua;
+    transition: all 0.7s ease 0s;
+}
+
+.social-media-links li a:link,
+.social-media-links li a:visited {
+    font-size: 14px;
+}
+
+footer p {
+    color: darkred;
+    font-size: 15px;
+    margin-bottom: 50px;
+}
+
+/*======================================
+           SIGN IN
+========================================*/
+
+.simpleForm {
+    width: 70%;
+    margin: 20px auto;
+    padding: 6px 20px;
+    border: 2px solid #F97800;
+    border-radius: 15px;
+    background-color: cornsilk;
+    box-shadow: 10px 10px 10px 10px rgba(248, 216, 174, 0.4);
+
+}
+
+.simpleForm input {
+    width: 100%;
+    margin: 4px 0px;
+    padding: 5px 5px;
+}
+
+.simpleForm button {
+    margin: 8px 0px;
+    color: #F97800;
+    background-color: bisque;
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    font-size: 20px;
+}
+
+.user-name {
+    border-radius: 10px;
+    border: 1px solid #F97800;
+}
+
+.phone-number {
+    border-radius: 10px;
+    border: 1px solid #F97800;
+}
+
+.confirm-pass {
+    border-radius: 10px;
+    border: 1px solid #F97800;
+}
+
+.pass {
+    border-radius: 10px;
+    border: 1px solid #F97800;
+}
+
+.wrong-input {
+    border: 2px solid red;
+    border-radius: 10px;
+    animation: shake 0.2s ease;
+    animation-iteration-count: 1;
+}
+@keyframes shake {
+    10%, 90% {
+        transform: translate3d(-1px, 0, 0);
+        
+    }
+}
+
+
+/*======================================
+           SUCCESSFULLY
+========================================*/
+
+.succesfully {
+    font-size: 40px;
+    color: #F97800;
+    padding-top: 50px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
